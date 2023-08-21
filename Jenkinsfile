@@ -1,9 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sleep 1
+        sleep 100
+      }
+    }
+
+    stage('end') {
+      steps {
+        echo 'end'
       }
     }
 
